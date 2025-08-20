@@ -42,15 +42,36 @@ const Home = () => {
     );
   }, []);
 
+  const features = [
+    {
+      title: "📌 Easy Task Management",
+      desc: "Create, edit, and organize your tasks in seconds. Stay on top of your to-do list without any hassle.",
+    },
+    {
+      title: "⏰ Stay on Track",
+      desc: "Set reminders and deadlines to ensure you never miss what’s important. Boost your consistency every day.",
+    },
+    {
+      title: "📊 Boost Productivity",
+      desc: "Track progress, complete tasks efficiently, and achieve your goals with a clear and simple workflow.",
+    },
+  ];
+
   return (
     <>
-      <div className="flex flex-col items-center justify-center text-center min-h-[90vh] px-4">
+      <div className="flex flex-col items-center justify-center text-center min-h-[90vh] px-4 bg-white">
         {/* Hero */}
-        <h1 ref={headingRef} className="text-5xl font-extrabold text-indigo-600">
-          Welcome to <span className="text-[#1E293B]" style={{color:"yellowgreen"}}>Taskify</span>
+        <h1
+          ref={headingRef}
+          className="text-5xl font-extrabold text-indigo-600"
+        >
+          Welcome to{" "}
+          <span className="text-[#1E293B]" style={{ color: "yellowgreen" }}>
+            Taskify
+          </span>
         </h1>
 
-        <p ref={subTextRef} className="mt-4 text-gray-600 text-lg md:text-xl max-w-2xl">
+        <p ref={subTextRef} className="mt-4 text-lg md:text-xl max-w-2xl">
           Organize your goals efficiently 🚀
         </p>
 
@@ -64,21 +85,20 @@ const Home = () => {
 
         {/* Features Section */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
-          {["📌 Easy Task Management", "⏰ Stay on Track", "📊 Boost Productivity"].map(
-            (title, i) => (
-              <div
-                key={i}
-                ref={(el) => (boxRefs.current[i] = el)}
-                className="p-6 bg-white shadow-lg rounded-xl border hover:shadow-2xl transition duration-300"
-              >
-                <h3 className="text-xl font-bold text-indigo-600">{title}</h3>
-                <p className="text-gray-600 mt-2">Lorem ipsum placeholder text.</p>
-              </div>
-            )
-          )}
+          {features.map((item, i) => (
+            <div
+              key={i}
+              ref={(el) => (boxRefs.current[i] = el)}
+              className="p-6 bg-white shadow-lg rounded-xl border hover:shadow-2xl transition duration-300"
+            >
+              <h3 className="text-xl font-bold text-indigo-600">{item.title}</h3>
+              <p className="text-gray-600 mt-2">{item.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
-      <Footer /> {/* ✅ Your footer here */}
+
+      <Footer />
     </>
   );
 };

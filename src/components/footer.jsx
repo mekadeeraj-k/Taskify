@@ -15,17 +15,17 @@ const Footer = () => {
   return (
     <footer
       ref={footerRef}
-      className="bg-[#1E293B] text-gray-300 py-10 mt-12 shadow-inner"
+      className="bg-indigo-900 text-gray-300 py-10 mt-12 shadow-inner"
     >
       <div className="container mx-auto flex flex-col items-center text-center px-6">
         {/* App tagline */}
-        <h2 className="text-lg font-semibold text-indigo-200 mb-2">
+        <h2 className="text-lg font-semibold text-indigo-300 mb-2">
           Taskify - Goal Manager 🚀
         </h2>
 
         {/* Your Name */}
         <h1 className="text-2xl font-bold text-white tracking-wide">
-          Deeraj
+          Deeraj Kumar Meka
         </h1>
 
         {/* Instagram */}
