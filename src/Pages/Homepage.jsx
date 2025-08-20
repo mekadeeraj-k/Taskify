@@ -59,7 +59,9 @@ const Home = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center text-center min-h-[90vh] px-4 bg-white">
+      {/* <div className="flex flex-col items-center justify-center text-center min-h-[90vh] px-4 bg-white"> */}
+        <div className="flex flex-col items-center justify-center text-center min-h-[90vh] px-4 bg-white pt-20">
+
         {/* Hero */}
         <h1
           ref={headingRef}
