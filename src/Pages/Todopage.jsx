@@ -102,7 +102,7 @@ const TodoPage = () => {
                 : setNewTask(e.target.value)
             }
             placeholder="Enter a task..."
-            className="flex-1 p-3 border border-gray-300 rounded-l-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="flex-1 p-3 border border-gray-300 rounded-l-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-400" style={{color:"black"}}
           />
           <button
             onClick={addTask}

@@ -47,7 +47,7 @@ const Home = () => {
       <div className="flex flex-col items-center justify-center text-center min-h-[90vh] px-4">
         {/* Hero */}
         <h1 ref={headingRef} className="text-5xl font-extrabold text-indigo-600">
-          Welcome to <span className="text-[#1E293B]">Taskify</span>
+          Welcome to <span className="text-[#1E293B]" style={{color:"yellowgreen"}}>Taskify</span>
         </h1>
 
         <p ref={subTextRef} className="mt-4 text-gray-600 text-lg md:text-xl max-w-2xl">
